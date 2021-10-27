@@ -35,7 +35,6 @@ function changeColor(primaryColor, secondaryColor){
 window.onload = function () {
     var mintues = 25;
     var seconds = 00;
-
     var time = 60 * 25;
 
     display = document.querySelector('.timer');
