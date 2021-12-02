@@ -4,24 +4,34 @@ var interval = null;
 var minutes = 25;
 var seconds;
 var timer; 
+
+
+function playTimerSound(){
+    document.getElementById("timer-alarm-sound").currentTime = 9;
+    document.getElementById("timer-alarm-sound").play();
+}
+
 function startTimer(duration, display) {
-     timer = duration, minutes, seconds;
+    timer = duration, minutes, seconds;
     if(timerOn){
         interval = setInterval(function () {
             minutes = parseInt(timer / 60, 10);
             seconds = parseInt(timer % 60, 10);
     
             displayTime(minutes, seconds);
-    
-            if(timer <= 0){
+            
+            if(timer == 0){
+                playTimerSound();
                 clearInterval(interval);
+
             }
-            if (--timer < 0) {
-                timer = duration;
+            if(--timer < 0){
+                Stop();
+                time = displayTime(25, 00);
             }
+
         }, 1000);
     }
-
 }
 
 function changeColor(primaryColor, secondaryColor){
@@ -52,7 +62,6 @@ function displayTime(min, sec){
 }
 
 window.onload = function () {
-    //seconds = 00;
     time = 60 * minutes;
 
     display = document.querySelector('.timer');
@@ -91,13 +100,13 @@ window.onload = function () {
     document.querySelector("#start-btn").onclick = function(){
         if(timerOn == false){
             timerOn = true;
-            document.querySelector("#start-btn").addEventListener("click", Start(time, display));   
+            document.querySelector("#start-btn").addEventListener("click", Start(time, display));  
         }else{
             console.log(minutes + ':' + seconds);
             time = timer;
             console.log("Time: ", timer);   
         }
-    }
+    } 
 };
 
 function Start(time, display){
