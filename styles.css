@@ -8,16 +8,15 @@ a, a:hover, a:focus, a:active {
     color: inherit;
 }
 
-.navbar{
-    padding: 40px 80px;
-}
 
 #signature{
+    position: relative;
     color: white;
     padding: 0px;
     font-size: 50px;
     font-weight: bold;
     text-decoration: none;
+    left: 50px;
 }
 
 #login-btn-form{
@@ -36,8 +35,10 @@ a, a:hover, a:focus, a:active {
 #login-btn {
     position: relative;
     top: 15px;
+    width: 150px;
+    right: 50px;
     height: 50px; 
-    width: 100px;
+    max-width: 125px;
     border: 2px #000;
     color: #6EA11A ;
     background-color: white;
@@ -177,6 +178,8 @@ input[type=text], input[type=password] {
 }
 
 #timer-container{
+    position: relative;
+    top: 7vh;
     height: 650px;
     width: 600px;
     padding: 30px 30px;
@@ -228,8 +231,19 @@ input[type=text], input[type=password] {
     color: #6EA11A;
 }
 
-@media (min-width: 400px){
+@media (max-width: 480px){
     .timer-nav-btn{
-        font-size: small;
+        width: 93px;
+        font-weight: 100;
+        font-size: 15px !important;
+    }
+    #signature{
+        left: 10px;
+    }
+    #login-btn{
+        height: 40px;
+        width: 100px;
+        top: 7px;
+        right: 5px;
     }
 }
