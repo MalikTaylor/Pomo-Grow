@@ -1,12 +1,7 @@
-
 body{
-    background-color: #ffdd83 !important;
     font-family: 'Signika', sans-serif !important;
     margin: 0px;
     height: 100vh;
-}
-body#timer-body{
-    background-color: #6EA11A !important;
 }
 
 a, a:hover, a:focus, a:active {
@@ -15,7 +10,6 @@ a, a:hover, a:focus, a:active {
 
 .navbar{
     padding: 40px 80px;
-
 }
 
 #signature{
@@ -31,20 +25,22 @@ a, a:hover, a:focus, a:active {
     float: right;
 }
 
-#login-btn{
+.btn-lg{
+    font-family: 'Signika', sans-serif;
+    font-weight: bold;
+    color: white;
+    border-radius: 3px;
+    font-size: 20px;
+}
+
+#login-btn {
     position: relative;
     top: 15px;
     height: 50px; 
     width: 100px;
     border: 2px #000;
-    border-radius: 3px;
-    font-family: 'Signika', sans-serif;
-    font-size: 20px;
-    font-weight: bold;
-    color: #6EA11A;
+    color: #6EA11A ;
     background-color: white;
-    cursor: pointer;
-
 }
 
 .page-container{
@@ -79,21 +75,14 @@ input[type=text], input[type=password] {
     padding: 12px 20px;   
     display: inline-block;  
     box-sizing: border-box; 
-    border-radius: 3px;  
     border: 2px #C4C4C4;
     background-color: #C4C4C4;
 }  
 
 .form-login-btn{
-    width: 100%;
     padding: 15px;
     margin: 40px 0px 15px;
-    font-weight: bold;
-    font-family: 'Signika', sans-serif;
     border: 2px rgb(34, 34, 34);
-    border-radius: 3px;
-    cursor: pointer;
-    color: white;
     background-color: rgb(34, 34, 34);
 }
 
@@ -204,18 +193,11 @@ input[type=text], input[type=password] {
     padding: 15px;
 }
 
-
 .timer-nav-btn{
     height: 57px; 
     width: 150px;
     border: 2px #8BC22F;
-    border-radius: 3px;;
-    font-size: 20px;
-    font-weight: bold;
-    font-family: 'Signika', sans-serif;
-    color: white;
     background-color: #8BC22F;
-    cursor: pointer;
 }
 
 .timer-nav-btn:hover{
@@ -242,9 +224,12 @@ input[type=text], input[type=password] {
     padding: 15px;
     margin: 30px 0px 15px;
     font-size: 30px;
-    font-family: 'Signika', sans-serif;
     border: 2px rgb(34, 34, 34);
-    border-radius: 3px;
-    cursor: pointer;
     color: #6EA11A;
+}
+
+@media (min-width: 400px){
+    .timer-nav-btn{
+        font-size: small;
+    }
 }

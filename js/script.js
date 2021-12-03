@@ -47,6 +47,7 @@ function changeColor(primaryColor, secondaryColor){
     }
     document.getElementById("login-btn").style.color = primaryColor;
     document.getElementById("start-btn").style.color = primaryColor;
+    document.getElementById("timer-body").style.backgroundColor = primaryColor;
 }
 
 function displayTime(min, sec){
