@@ -1,7 +1,7 @@
 body{
     font-family: 'Signika', sans-serif !important;
     margin: 0px;
-    height: 100vh;
+    height: 100vh !important;
 }
 
 a, a:hover, a:focus, a:active {
@@ -25,6 +25,7 @@ a, a:hover, a:focus, a:active {
 }
 
 .btn-lg{
+    width: 150px;
     font-family: 'Signika', sans-serif;
     font-weight: bold;
     color: white;
@@ -65,9 +66,10 @@ a, a:hover, a:focus, a:active {
 
 .login-form{
     margin-top: 30px;
-    text-align: left;
     font-weight: bold;
+    text-align: left;
     justify-content: center;
+    align-items: center;
 }
 
 input[type=text], input[type=password] {   
@@ -80,9 +82,14 @@ input[type=text], input[type=password] {
     background-color: #C4C4C4;
 }  
 
+
+#btn-container{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
 .form-login-btn{
-    padding: 15px;
-    margin: 40px 0px 15px;
+    position: relative;
     border: 2px rgb(34, 34, 34);
     background-color: rgb(34, 34, 34);
 }
@@ -91,6 +98,7 @@ input[type=text], input[type=password] {
     text-align: center;
     display: block;
     justify-content: center;
+    padding-top: 20px;
 }
 
 
@@ -110,19 +118,12 @@ input[type=text], input[type=password] {
         width: 350px;
 
     }
-    .form-login-btn{
-        position: relative;
-        left: 25%;
-        margin: auto;
-        width: 50%;
-    }
     #login-img{
         height: 900px;
-        width: 400px;
+        width: 350px;
         bottom: 0px;
-        right: 0px;
+        right: -50px;
     }
-
 }
 
 @media (min-width: 480px) {
@@ -132,12 +133,6 @@ input[type=text], input[type=password] {
         height: 400px;
         width: 350px;
 
-    }
-    .form-login-btn{
-        position: relative;
-        left: 25%;
-        margin: auto;
-        width: 50%;
     }
     #login-img{
         height: 900px;
@@ -153,18 +148,15 @@ input[type=text], input[type=password] {
         margin-top: 8em;
         height: 450px;
         width: 450px;
-        
-    }
-    .form-login-btn{
-        margin-top: 30px;
-        left: auto;
-        width: 100%;
     }
     #login-img{
         height: 1200px;
         width: 30em;
         bottom: 0px;
         right: 0px;
+    }
+    .form-login-btn{
+        top: 20px;
     }
 }
 
@@ -209,12 +201,11 @@ input[type=text], input[type=password] {
 
 #clock-container{
     height: 150px;
-    padding: 0px 20px 40px;
     display: flex;
     text-align: center;
     justify-content: center;
     align-items: center;
-    font-size: 130px;
+    font-size: 7em;
 }
 
 #img{
@@ -245,5 +236,17 @@ input[type=text], input[type=password] {
         width: 100px;
         top: 7px;
         right: 5px;
+        font-size: large;
+    }
+    #img{
+        width: 140px;
+        height: 175px;
+    
+    }
+    #start-btn{
+        position: relative;
+        top: 40px;
+        width: 6.5em;
+        font-size: x-large;
     }
 }
