@@ -70,7 +70,7 @@ window.onload = function () {
     var primaryColor = "rgb(110, 161, 26)";
     var secondaryColor = "rgb(139, 194, 47)";
 
-    
+    $("#pm-btn").css("background-color", primaryColor);
     //Handle button color on click
     $('.timer-multi-button').on("click", "button" ,function() {
         $(".primary").css("background-color", primaryColor);
