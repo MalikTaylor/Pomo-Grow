@@ -75,8 +75,8 @@ Pomo-Grow is a pomodoro timer that works on desktop browsers. The Pomodoro Techn
 
 ### Built With
 
+* [Bootstrap](https://getbootstrap.com/)
 * [JQuery](https://jquery.com)
-
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 <!-- CONTRIBUTING -->
