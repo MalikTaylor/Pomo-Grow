@@ -99,6 +99,11 @@ window.onload = function () {
     }
 
     document.querySelector("#start-btn").onclick = function(){
+        if($("#start-btn").hasClass("btn-clicked")){
+            $("#start-btn").removeClass("btn-clicked");
+        }else{
+            $("#start-btn").addClass("btn-clicked");
+        }
         if(timerOn == false){
             timerOn = true;
             document.querySelector("#start-btn").addEventListener("click", Start(time, display));  

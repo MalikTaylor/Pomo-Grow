@@ -1,3 +1,5 @@
+/*$primary-color: #6EA11A;*/
+
 body{
     font-family: 'Signika', sans-serif !important;
     margin: 0px;
@@ -206,12 +208,19 @@ input[type=text], input[type=password] {
 }
 
 #start-btn{
+    background-color: white;
+    height: 65px;
     width: 33%;
-    padding: 15px;
     margin: 30px 0px 15px;
     font-size: 30px;
     border: 2px rgb(34, 34, 34);
+    box-shadow: 0px 6px 0px rgb(220 220 220);
     color: #6EA11A;
+}
+
+.btn-clicked{
+    transform: translateY(6px);
+    box-shadow: 0px 0px 0px rgba(110, 161, 26, 0.5) !important;
 }
 
 @media (max-width: 480px){
