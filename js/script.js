@@ -1,4 +1,3 @@
-
 var timerOn = false;
 var interval = null;
 var minutes = 25;
@@ -67,36 +66,37 @@ window.onload = function () {
 
     display = document.querySelector('.timer');
     displayTime(25, 00);
-    document.getElementById("pm-btn").style.backgroundColor = "#6EA11A";
-    
 
+    var primaryColor = "rgb(110, 161, 26)";
+    var secondaryColor = "rgb(139, 194, 47)";
+
+    
     //Handle button color on click
+    $('.timer-multi-button').on("click", "button" ,function() {
+        $(".primary").css("background-color", primaryColor);
+        $(".secondary").css("background-color", secondaryColor);
+        $(this).css("background-color", primaryColor);
+        $("#login-btn").css("color", primaryColor);
+        $("#start-btn").css("color", primaryColor);
+    });
+
     document.getElementById("pm-btn").onclick = function(){
         time = displayTime(25, 00);
-        var primaryColor = "#6EA11A";
-        var secondaryColor = "#8BC22F";
-        changeColor(primaryColor, secondaryColor);
-        document.getElementById("pm-btn").style.backgroundColor = "#6EA11A";
+        primaryColor = "rgb(110, 161, 26)";
+        secondaryColor = "rgb(139, 194, 47)";
     }
 
     document.getElementById("sb-btn").onclick = function(){
         time = displayTime(5, 00);
-        var primaryColor = "rgb(76 145 149)";
-        var secondaryColor = "rgb(94 156 160)";
-        changeColor(primaryColor, secondaryColor);
-        document.getElementById("sb-btn").style.backgroundColor = "rgb(76 145 149)";
+        primaryColor = "rgb(76 145 149)";
+        secondaryColor = "rgb(94 156 160)";
     }
     
     document.getElementById("lb-btn").onclick = function(){
         time = displayTime(15, 00);
-        
-        var primaryColor = "rgb(69 124 163)";
-        var secondaryColor = "rgb(88 137 172)";
-        changeColor(primaryColor, secondaryColor);
-        document.getElementById("lb-btn").style.backgroundColor = "rgb(69 124 163)";
+        primaryColor = "rgb(69 124 163)";
+        secondaryColor = "rgb(88 137 172)";
     }
-
-    
 
     document.querySelector("#start-btn").onclick = function(){
         if(timerOn == false){

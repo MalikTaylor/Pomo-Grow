@@ -4,6 +4,14 @@ body{
     height: 100vh !important;
 }
 
+.primary{
+    transition: background-color 0.5s ease-in-out 0s;
+}
+
+.secondary{
+    transition: background-color 0.5s ease-in-out 0s;
+}
+
 a, a:hover, a:focus, a:active {
     color: inherit;
 }
@@ -170,19 +178,17 @@ input[type=text], input[type=password] {
     background-color: #8BC22F;
 }
 
-.timer-navbar{
+.timer-multi-button{
     padding: 15px;
+    border-radius: 3px;
 }
 
 .timer-nav-btn{
     height: 57px; 
     width: 150px;
     border: 2px #8BC22F;
+    border-radius: 0px !important;
     background-color: #8BC22F;
-}
-
-.timer-nav-btn:hover{
-    background-color: #6EA11A;
 }
 
 #clock-container{
