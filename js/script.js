@@ -94,8 +94,8 @@ window.onload = function () {
     
     document.getElementById("lb-btn").onclick = function(){
         time = displayTime(15, 00);
-        primaryColor = "rgb(69 124 163)";
-        secondaryColor = "rgb(88 137 172)";
+        primaryColor = "rgb(19, 32, 82)";
+        secondaryColor = "rgb(21, 40, 82)";
     }
 
     document.querySelector("#start-btn").onclick = function(){
