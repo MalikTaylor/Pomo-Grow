@@ -47,7 +47,9 @@ function changeColor(primaryColor, secondaryColor){
     document.getElementById("login-btn").style.color = primaryColor;
     document.getElementById("start-btn").style.color = primaryColor;
     document.getElementById("timer-body").style.backgroundColor = primaryColor;
+    document.body.style.backgroundImage = "linear-gradient(#113620 , #213D2C, #264332 )";
 }
+
 
 function displayTime(min, sec){
 
@@ -67,9 +69,12 @@ window.onload = function () {
     display = document.querySelector('.timer');
     displayTime(25, 00);
 
-    var primaryColor = "rgb(110, 161, 26)";
-    var secondaryColor = "rgb(139, 194, 47)";
+    var primaryColor = "rgb(45, 69, 54)";
+    var secondaryColor = "rgb(54, 85, 66)";
 
+    changeColor(primaryColor, secondaryColor);
+
+    
     $("#pm-btn").css("background-color", primaryColor);
     //Handle button color on click
     $('.timer-multi-button').on("click", "button" ,function() {
@@ -79,23 +84,31 @@ window.onload = function () {
         $("#login-btn").css("color", primaryColor);
         $("#start-btn").css("color", primaryColor);
     });
+    
+
 
     document.getElementById("pm-btn").onclick = function(){
         time = displayTime(25, 00);
-        primaryColor = "rgb(110, 161, 26)";
-        secondaryColor = "rgb(139, 194, 47)";
+        primaryColor = "rgb(45, 69, 54)";
+        secondaryColor = "rgb(54, 85, 66)";
+        changeColor(primaryColor, secondaryColor);
+        document.body.style.backgroundImage = "linear-gradient(#113620 , #213D2C, #264332 )";
     }
 
     document.getElementById("sb-btn").onclick = function(){
         time = displayTime(5, 00);
         primaryColor = "rgb(76 145 149)";
         secondaryColor = "rgb(94 156 160)";
+        changeColor(primaryColor, secondaryColor);
+        document.body.style.backgroundImage= "";
     }
     
     document.getElementById("lb-btn").onclick = function(){
         time = displayTime(15, 00);
         primaryColor = "rgb(19, 32, 82)";
         secondaryColor = "rgb(21, 40, 82)";
+        changeColor(primaryColor, secondaryColor);
+        document.body.style.backgroundImage= "";
     }
 
     document.querySelector("#start-btn").onclick = function(){

@@ -5,13 +5,6 @@ body{
     margin: 0px;
     height: 100vh !important;
     overflow: hidden;
-}
-
-.primary{
-    transition: background-color 0.5s ease-in-out 0s;
-}
-
-.secondary{
     transition: background-color 0.5s ease-in-out 0s;
 }
 
@@ -43,6 +36,7 @@ a, a:hover, a:focus, a:active {
     color: white;
     border-radius: 3px;
     font-size: 20px;
+    transition: color 0.5s ease-in-out 0s;
 }
 
 #login-btn {
@@ -53,7 +47,6 @@ a, a:hover, a:focus, a:active {
     height: 50px; 
     max-width: 125px;
     border: 2px #000;
-    color: #6EA11A ;
     background-color: white;
 }
 
@@ -172,7 +165,7 @@ input[type=text], input[type=password] {
 #timer-container{
     position: relative;
     top: 7vh;
-    height: 650px;
+    height: 700px;
     width: 600px;
     padding: 30px 30px;
     display: block;
@@ -181,7 +174,9 @@ input[type=text], input[type=password] {
     justify-content: center;
     align-items: center;
     border-radius: 8px;
-    background-color: #8BC22F;
+    background-color: #365542;
+    font-family: 'Bahnschrift' !important;
+    transition: background-color 0.5s ease-in-out 0s;
 }
 
 .timer-multi-button{
@@ -192,9 +187,11 @@ input[type=text], input[type=password] {
 .timer-nav-btn{
     height: 57px; 
     width: 150px;
-    border: 2px #8BC22F;
+    border: 2px #365542;
     border-radius: 0px !important;
-    background-color: #8BC22F;
+    background-color: #365542;
+    font-family: 'Bahnschrift' !important;
+    transition: background-color 0.5s ease-in-out 0s;
 }
 
 #clock-container{
@@ -214,18 +211,20 @@ input[type=text], input[type=password] {
 
 
 #start-btn{
+    position: relative;
+    top: 30px;
     background-color: white;
-    height: 65px;
-    width: 33%;
-    font-size: 30px;
+    height: 55px;
+    width: 177px;
+    font-size: 23px;
     border: 2px rgb(34, 34, 34);
     box-shadow: 0px 6px 0px rgb(220 220 220);
-    color: #6EA11A;
+    color: #365542 !important;
 }
 
 .btn-clicked{
     transform: translateY(6px);
-    box-shadow: 0px 0px 0px rgba(110, 161, 26, 0.5) !important;
+    box-shadow: 0px 0px 0px !important;
 }
 
 @media (max-width: 480px){
@@ -253,6 +252,6 @@ input[type=text], input[type=password] {
         position: relative;
         top: 40px;
         width: 6.5em;
-        font-size: x-large;
+        font-size: 5px !important;
     }
 }
