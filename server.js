@@ -22,16 +22,19 @@ const users = []
 
 // app.use(express.cookieParser('your secret here'));
 
-app.use('/public', express.static('public'));
-app.set("view-engine", "ejs")
-app.use(express.urlencoded({extended: false}))
-app.use(flash())
+
 
 app.use(session({
     secret: process.env.SESSION_SECRET,
     resave: true,
     saveUninitialized: true
 }))
+
+
+app.use('/public', express.static('public'));
+app.set("view-engine", "ejs")
+app.use(express.urlencoded({extended: false}))
+app.use(flash())
 
 app.use(passport.initialize())
 app.use(passport.session())
