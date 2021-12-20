@@ -1,5 +1,3 @@
-/*$primary-color: #6EA11A;*/
-
 body{
     font-family: 'Signika', sans-serif !important;
     margin: 0px;
@@ -12,46 +10,107 @@ a, a:hover, a:focus, a:active {
     color: inherit;
 }
 
-#signature{
-    position: relative;
-    color: white;
-    font-size: 50px;
-    font-weight: bold;
-    text-decoration: none;
-    left: 50px;
-}
-
-.icon{
-    height: 30px;
-}
-#login-btn-form{
-    display: inline-flex;
-    float: right;
-}
 
 .btn-lg{
-    width: 150px;
+    min-width: 150px;
+    width: auto;
     font-family: 'Signika', sans-serif;
     font-weight: bold;
     color: white;
+    border: 0px;
     border-radius: 3px;
     font-size: 20px;
     transition: color 0.5s ease-in-out 0s;
 }
 
-#login-btn {
+/* Navbar content */
+.navbar{
+    padding: 8px 50px 8px 50px !important;
+}
+#logo{
+    color: white;
+    font-size: 50px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.icon{
+    height: 40px;
+    margin: 0px 5px 10px 5px;
+}
+.dropdown{
     position: relative;
     top: 15px;
+    width: auto;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 60px;
+    right: 0px;
+    height: 100%;
+    background-color: white;
+    border-radius: 4px !important;
+    min-width: 160px;
+    width: 180px;
+    z-index: 1;
+}
+
+.show {display:block;}
+
+.dropdown-content-btn{
+    width: 100% !important;
+    border: 2px rgb(34, 34, 34);
+    border-radius: 3px !important;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    color:  #365542;
+    text-align: left;
+}
+
+.dropdown-content button:hover {
+    background-color: #365542;
+}
+
+.dropdown-icon{
+    position: relative;
+    right: 6px;
+}
+
+
+
+
+
+
+
+/* Navbar Buttons */
+#login-btn-form{
+    position: relative;
+    top: 15px;
+    margin: 0px;
+}
+
+#login-btn {
     width: 150px;
-    right: 50px;
     height: 50px; 
     max-width: 125px;
-    border: 2px #000;
     background-color: white;
 }
 
+
+#login-icon{
+    position: relative;
+    right: 15px;
+}
+
+#user-btn{
+    height: 50px; 
+    width: auto;
+    max-width: 300px;
+    color: #365542;
+}
+
 .page-container{
-    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -71,9 +130,9 @@ a, a:hover, a:focus, a:active {
     font-weight: bold;
 }
 
-input[type=text], input[type=password] {   
+input[type=email], input[type=password] {   
     width: 100%;   
-    margin: 5px 0px 30px;  
+    margin: 5px 0px 25px;  
     padding: 12px 20px;   
     display: inline-block;  
     box-sizing: border-box; 
@@ -85,6 +144,22 @@ input[type=text], input[type=password] {
     position: relative;
     border: 2px rgb(34, 34, 34);
     background-color: rgb(34, 34, 34);
+}
+
+.login-error-message {
+    color: rgb(226,30,44) !important;
+}
+
+#email-error-message-container {
+    height: 24px;
+    position: relative;
+    top: -10px;
+}
+
+#password-error-message-container {
+    height: 24px;
+    position: relative;
+    top: -10px;
 }
 
 .signup{
@@ -101,13 +176,12 @@ input[type=text], input[type=password] {
 }
 
 @media (max-width: 480px) {
-    #signature{
+    #logo{
         font-size: 30px;
     }
     .login-container{
         bottom: 0px;
         margin-top: 5em;
-        height: 400px;
         width: 350px;
 
     }
@@ -123,7 +197,6 @@ input[type=text], input[type=password] {
     .login-container{
         bottom: 0px;
         margin-top: 5em;
-        height: 400px;
         width: 350px;
 
     }
@@ -139,7 +212,6 @@ input[type=text], input[type=password] {
     .login-container{
         bottom: 0px;
         margin-top: 8em;
-        height: 450px;
         width: 450px;
     }
     #login-img{
@@ -219,7 +291,7 @@ input[type=text], input[type=password] {
     font-size: 23px;
     border: 2px rgb(34, 34, 34);
     box-shadow: 0px 6px 0px rgb(220 220 220);
-    color: #365542 !important;
+    color: #365542;
 }
 
 .btn-clicked{
@@ -233,20 +305,16 @@ input[type=text], input[type=password] {
         font-weight: 100;
         font-size: 15px !important;
     }
-    #signature{
+    #logo{
         left: 10px;
-    }
-    #login-btn{
-        height: 40px;
-        width: 100px;
-        top: 7px;
-        right: 5px;
-        font-size: large;
     }
     #img{
         width: 140px;
         height: 175px;
-    
+    }
+    .form-login-btn {
+        margin-top: 30px;
+        top: -20px;
     }
     #start-btn{
         position: relative;

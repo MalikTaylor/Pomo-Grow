@@ -53,38 +53,56 @@ function changeColor(primaryColor, secondaryColor){
 
 function displayTime(min, sec){
 
-    min = min < 10 ? "0" + min : min;
-    sec = sec < 10 ? "0" + sec : sec;
-    display.textContent = min + ":" + sec;
+    min = min < 10 ? "0" + min : min
+    sec = sec < 10 ? "0" + sec : sec
+    display.textContent = min + ":" + sec
 
-    minutes = min;
-    seconds = sec;
+    minutes = min
+    seconds = sec
 
-    return (60 * min);
+    return (60 * min)
 }
 
 window.onload = function () {
-    time = 60 * minutes;
+    time = 60 * minutes
 
-    display = document.querySelector('.timer');
-    displayTime(25, 00);
+    display = document.querySelector('.timer')
+    displayTime(25, 00)
 
-    var primaryColor = "rgb(45, 69, 54)";
-    var secondaryColor = "rgb(54, 85, 66)";
+    var primaryColor = "rgb(45, 69, 54)"
+    var secondaryColor = "rgb(54, 85, 66)"
 
-    changeColor(primaryColor, secondaryColor);
+    changeColor(primaryColor, secondaryColor)
 
     
-    $("#pm-btn").css("background-color", primaryColor);
+    $("#pm-btn").css("background-color", primaryColor)
+    $(".dropdown-content-btn").css("color", primaryColor)
     //Handle button color on click
     $('.timer-multi-button').on("click", "button" ,function() {
-        $(".primary").css("background-color", primaryColor);
-        $(".secondary").css("background-color", secondaryColor);
-        $(this).css("background-color", primaryColor);
-        $("#login-btn").css("color", primaryColor);
-        $("#start-btn").css("color", primaryColor);
+        $(".primary").css("background-color", primaryColor)
+        $(".secondary").css("background-color", secondaryColor)
+        $(this).css("background-color", primaryColor)
+        $("#login-btn").css("color", primaryColor)
+        $("#start-btn").css("color", secondaryColor)
+        $("#user-btn").css("color", primaryColor)
+        $(".dropdown-content-btn").css("color", primaryColor)
     });
     
+    $("#profile-btn").hover(function(){
+        $(this).css("background-color", secondaryColor)
+        $(this).css("color", "white")
+    },function(){
+            $(this).css("background-color", "white")
+            $(this).css("color", primaryColor)
+    });
+
+    $("#logout-btn").hover(function(){
+        $(this).css("background-color", secondaryColor)
+        $(this).css("color", "white")
+    },function(){
+            $(this).css("background-color", "white")
+            $(this).css("color", primaryColor)
+    });
 
 
     document.getElementById("pm-btn").onclick = function(){
@@ -145,4 +163,26 @@ function Stop(time, display){
     timerOn = false;
     clearInterval(interval);
 }
+
+function swap(){
+    document.getElementById("login-btn").style.visibility = 'hidden';
+    document.getElementById("user-btn").style.visibility = 'visible';
+}
+
+function dropDown() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+window.onclick = function(event) {
+    if (!event.target.matches('.dropbtn')) {
+      var dropdowns = document.getElementsByClassName("dropdown-content");
+      var i;
+      for (i = 0; i < dropdowns.length; i++) {
+        var openDropdown = dropdowns[i];
+        if (openDropdown.classList.contains('show')) {
+          openDropdown.classList.remove('show');
+        }
+      }
+    }
+  }
 
