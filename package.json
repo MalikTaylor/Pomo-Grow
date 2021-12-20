@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "devStart": "nodemon server.js",
-    "start": "node index.ejs"
+    "start": "node index.js"
   },
   "repository": {
     "type": "git",
@@ -19,8 +19,14 @@
   },
   "homepage": "https://github.com/MalikTaylor/Pomo-Grow#readme",
   "dependencies": {
+    "bcrypt": "^5.0.1",
+    "dotenv": "^10.0.0",
     "express": "^4.17.2",
+    "express-flash": "^0.0.2",
+    "express-session": "^1.17.2",
+    "method-override": "^3.0.0",
     "nodemon": "^2.0.15",
-    "passport": "^0.5.2"
+    "passport": "^0.5.2",
+    "passport-local": "^1.0.0"
   }
 }
