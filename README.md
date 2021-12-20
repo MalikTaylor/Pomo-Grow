@@ -36,7 +36,7 @@
   <p align="center">
     Personal/Project website hosted on GitHub Pages.
     <br />
-    <a href="https://github.com/github_username/repo_name">View Demo</a>
+    <a href="https://pomo-grow.herokuapp.com/">View Demo</a>
     ·
     <a href="https://github.com/github_username/repo_name/issues">Report Bug</a>
   </p>
