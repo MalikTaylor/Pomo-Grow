@@ -1,37 +1,39 @@
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Signika:wght@700&display=swap" rel="stylesheet">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Signika:wght@700&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 
-    <link href="http://fonts.cdnfonts.com/css/bahnschrift" rel="stylesheet">
+        <link href="http://fonts.cdnfonts.com/css/bahnschrift" rel="stylesheet">
 
-    <link rel="stylesheet" href="/public/assets/styles.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="/public/assets/js/script.js"></script>
-    
-    
-    <title>Pomo-Grow</title>
-</head>
-<body id="timer-body" class="primary" >
-            <audio id="timer-alarm-sound">
-                <source src="/public/assets/audio/Mechanical Clock Ring.mp3" type="audio/mpeg">
-            </audio>
-            <div class="navbar container-fluid">
+        <link rel="stylesheet" href="/public/assets/styles.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="/public/assets/js/script.js"></script>
+        
+        
+        <title>Pomo-Grow</title>
+    </head>
+    <body id="timer-body" class="primary" >
+        <audio id="timer-alarm-sound">
+            <source src="/public/assets/audio/Mechanical Clock Ring.mp3" type="audio/mpeg">
+        </audio>
+        <div class="navbar">
+            <div class="col-md-3 col-xs-">
                 <a id="logo" href="/">Pomo-Gr<img class="icon" src="/public/assets/images/logo-icon.png">w</a>
-                
+            </div>
+            <div class="col-md-3 col-xs- text-end">
                 <% if(!locals.loggedin) {%>
                     <form id="login-btn-form" action="/login">
                         <button id="login-btn" class="btn-lg"><i id="login-icon" class="fas fa-user-circle"></i>Login</button>
                     </form>    
                 <%} else{%>
-                    <form id="login-btn-form" action="/login">
+                    <form id="login-btn-form"   action="/login">
                         <button id="login-btn" class="btn-lg" style="visibility: hidden;">Login</button>
                     </form>   
                     <div class="dropdown">
@@ -45,9 +47,11 @@
                     </div>     
                 <%} %>
             </div>
+        </div>
+        <main class="container" style="align-items: center; justify-content: center; text-align: center;">
             <div class="page-container">
                 <div id="timer-container" class="secondary">  
-                    <div class="timer-multi-button  btn-group">
+                    <div class="timer-multi-button btn-group" >
                         <button id="pm-btn" class="timer-nav-btn btn-lg secondary">Pomodoro</button>
                         <button id="sb-btn" class="timer-nav-btn btn-lg secondary">Short Break</button>
                         <button id="lb-btn" class="timer-nav-btn btn-lg secondary">Long Break</button>
@@ -61,10 +65,9 @@
                     <button class="btn-lg" id="start-btn">Start</button>
                 </div>
             </div>
-        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
-
-</body>
+            <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+        </main>
+    </body>
 </html>
-
 

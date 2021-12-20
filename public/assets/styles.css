@@ -12,7 +12,6 @@ a, a:hover, a:focus, a:active {
 
 
 .btn-lg{
-    min-width: 150px;
     width: auto;
     font-family: 'Signika', sans-serif;
     font-weight: bold;
@@ -85,8 +84,6 @@ a, a:hover, a:focus, a:active {
 
 /* Navbar Buttons */
 #login-btn-form{
-    position: relative;
-    top: 15px;
     margin: 0px;
 }
 
@@ -175,7 +172,7 @@ input[type=email], input[type=password] {
     z-index: -100;
 }
 
-@media (max-width: 480px) {
+/* @media (max-width: 480px) {
     #logo{
         font-size: 30px;
     }
@@ -191,7 +188,7 @@ input[type=email], input[type=password] {
         bottom: 0px;
         right: -50px;
     }
-}
+} */
 
 @media (min-width: 480px) {
     .login-container{
@@ -300,14 +297,47 @@ input[type=email], input[type=password] {
 }
 
 @media (max-width: 480px){
+    .navbar{
+        padding: 8px 25px 8px 25px !important;
+    }
+    #timer-container{
+        position: relative;
+        height: 550px;
+        width: 330px;
+  
+        display: block;
+        text-align: center;
+        color: white;
+        justify-content: center;
+        align-items: center;
+        border-radius: 8px;
+        background-color: #365542;
+        font-family: 'Bahnschrift' !important;
+        transition: background-color 0.5s ease-in-out 0s;
+    }
+    .timer-multi-button{
+        padding: 15px 0px 15px 0px;
+        border-radius: 3px;
+    }
     .timer-nav-btn{
-        width: 93px;
-        font-weight: 100;
-        font-size: 15px !important;
+        position: relative;
+        left: -15px;
+        width: 98px !important;
+        font-size: 12px !important;
     }
     #logo{
-        left: 10px;
+        font-size: 30px !important;
     }
+    .icon{
+        height: 25px;
+        margin-bottom: 5px;
+    }
+    #login-btn{
+        width: 115px;
+        height: 35px;
+        font-size: medium;
+    }
+    /* iso tree img */
     #img{
         width: 140px;
         height: 175px;
@@ -319,7 +349,5 @@ input[type=email], input[type=password] {
     #start-btn{
         position: relative;
         top: 40px;
-        width: 6.5em;
-        font-size: 5px !important;
     }
 }
