@@ -28,6 +28,7 @@
     "method-override": "^3.0.0",
     "nodemon": "^2.0.15",
     "passport": "^0.5.2",
-    "passport-local": "^1.0.0"
+    "passport-local": "^1.0.0",
+    "passport-session": "^1.0.2"
   }
 }

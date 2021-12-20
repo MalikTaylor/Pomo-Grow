@@ -20,6 +20,8 @@ initializePassport(
 
 const users = []
 
+// app.use(express.cookieParser('your secret here'));
+
 app.use('/public', express.static('public'));
 app.set("view-engine", "ejs")
 app.use(express.urlencoded({extended: false}))
