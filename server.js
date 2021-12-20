@@ -7,7 +7,7 @@ const app = express()
 const bcrypt = require("bcrypt")
 const passport = require("passport")
 const flash = require("express-flash")
-const session = require("cookie-session")
+const session = require("express-session")
 const methodOverride = require("method-override")
 
 const initializePassport = require("./passport-config")
@@ -22,19 +22,16 @@ const users = []
 
 // app.use(express.cookieParser('your secret here'));
 
-
+app.use('/public', express.static('public'));
+app.set("view-engine", "ejs")
+app.use(express.urlencoded({extended: false}))
+app.use(flash())
 
 app.use(session({
     secret: process.env.SESSION_SECRET,
     resave: true,
     saveUninitialized: true
 }))
-
-
-app.use('/public', express.static('public'));
-app.set("view-engine", "ejs")
-app.use(express.urlencoded({extended: false}))
-app.use(flash())
 
 app.use(passport.initialize())
 app.use(passport.session())
