@@ -303,8 +303,7 @@ input[type=email], input[type=password] {
     #timer-container{
         position: relative;
         height: 550px;
-        width: 330px;
-  
+        width: 375px;
         display: block;
         text-align: center;
         color: white;
