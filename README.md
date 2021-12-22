@@ -125,4 +125,4 @@ Project Link: [https://github.com/MalikTaylor/Pomo-Grow](https://github.com/Mali
 [license-url]: https://choosealicense.com/licenses/mit
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=flat-square&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/-maliktaylor
-[product-screenshot]: /public/assets/images/Pomo-Grow%20Preview%20Img.png
+[product-screenshot]: /public/assets/images/pomo-grow-thumbnail-img
