@@ -34,7 +34,7 @@
 <h3 align="center">Pomo-Grow</h3>
 
   <p align="center">
-    Personal/Project website hosted on GitHub Pages.
+    Personal/Project website hosted on Heroku.
     <br />
     <a href="https://pomo-grow.herokuapp.com/">View Demo</a>
     ·
