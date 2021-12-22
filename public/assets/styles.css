@@ -144,6 +144,7 @@ input[type=email], input[type=password] {
 
 .form-login-btn{
     position: relative;
+    width: 125px !important;
     border: 2px rgb(34, 34, 34);
     background-color: rgb(34, 34, 34);
 }
