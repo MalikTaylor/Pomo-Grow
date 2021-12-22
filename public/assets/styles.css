@@ -15,6 +15,7 @@ a, a:hover, a:focus, a:active {
     width: auto;
     font-family: 'Signika', sans-serif;
     font-weight: bold;
+    background-color: white;
     color: white;
     border: 0px;
     border-radius: 3px;
@@ -26,6 +27,7 @@ a, a:hover, a:focus, a:active {
 .navbar{
     padding: 8px 50px 8px 50px !important;
 }
+
 #logo{
     color: white;
     font-size: 50px;
@@ -83,21 +85,24 @@ a, a:hover, a:focus, a:active {
 
 
 /* Navbar Buttons */
+.nav-btn{
+    height: 50px; 
+    width: 125px;
+    margin: 0px 5px 0px 5px;
+}
+
 #login-btn-form{
     margin: 0px;
 }
 
-#login-btn {
-    width: 150px;
-    height: 50px; 
-    max-width: 125px;
-    background-color: white;
+#settings-icon{
+    position: relative;
+    right: 5px;
 }
-
 
 #login-icon{
     position: relative;
-    right: 15px;
+    right: 5px;
 }
 
 #user-btn{
@@ -337,7 +342,7 @@ input[type=email], input[type=password] {
         height: 40px;
         font-size: medium;
     }
-    /* iso tree img */
+    /*Rename img to iso tree img */
     #img{
         width: 140px;
         height: 175px;

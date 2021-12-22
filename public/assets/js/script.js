@@ -44,6 +44,7 @@ function changeColor(primaryColor, secondaryColor){
     for(var i = 0; i < secondaryColoredElements.length; i++){
         secondaryColoredElements[i].style.backgroundColor = secondaryColor;
     }
+    document.getElementById("settings-btn").style.color = primaryColor;
     document.getElementById("login-btn").style.color = primaryColor;
     document.getElementById("start-btn").style.color = primaryColor;
     document.getElementById("timer-body").style.backgroundColor = primaryColor;
@@ -87,6 +88,17 @@ window.onload = function () {
         $("#user-btn").css("color", primaryColor)
         $(".dropdown-content-btn").css("color", primaryColor)
     });
+
+    
+
+
+    $("#settings-btn").click(function(){
+        $("#settings-panel").css("visibility", "visible")
+    })
+
+    $("#settings-exit-btn").click(function(){
+        $("#settings-panel").css("visibility", "hidden")
+    })
     
     $("#profile-btn").hover(function(){
         $(this).css("background-color", secondaryColor)
@@ -173,6 +185,7 @@ function dropDown() {
     document.getElementById("myDropdown").classList.toggle("show");
 }
 
+//Use this for all onclicks
 window.onclick = function(event) {
     if (!event.target.matches('.dropbtn')) {
       var dropdowns = document.getElementsByClassName("dropdown-content");
