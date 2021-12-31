@@ -116,7 +116,6 @@ Project Link: [https://github.com/MalikTaylor/Pomo-Grow](https://github.com/Mali
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
-<img src="">
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
@@ -127,4 +126,3 @@ Project Link: [https://github.com/MalikTaylor/Pomo-Grow](https://github.com/Mali
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=flat-square&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/-maliktaylor
 [product-screenshot]: /public/assets/images/pomo-grow-thumbnail-img.png
-
