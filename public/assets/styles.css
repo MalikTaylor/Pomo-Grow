@@ -23,6 +23,17 @@ a, a:hover, a:focus, a:active {
     transition: color 0.5s ease-in-out 0s;
 }
 
+.form-header{
+    font-size: 3.5em;
+}
+
+.form-btn{
+    position: relative;
+    width: 125px !important;
+    border: 2px rgb(34, 34, 34);
+    background-color: rgb(34, 34, 34);
+}
+
 /* Navbar content */
 .navbar{
     padding: 8px 50px 8px 50px !important;
@@ -41,7 +52,6 @@ a, a:hover, a:focus, a:active {
 }
 .dropdown{
     position: relative;
-    top: 15px;
     width: auto;
 }
 
@@ -95,6 +105,11 @@ a, a:hover, a:focus, a:active {
     margin: 0px;
 }
 
+#settings-btn{
+    min-width: 125px;
+    margin-right: 25px;
+}
+
 #settings-icon{
     position: relative;
     right: 5px;
@@ -107,7 +122,7 @@ a, a:hover, a:focus, a:active {
 
 #user-btn{
     height: 50px; 
-    width: auto;
+    min-width: 125px;
     max-width: 300px;
     color: #365542;
 }
@@ -119,7 +134,7 @@ a, a:hover, a:focus, a:active {
 }
 
 .login-container{
-    height: 450px;
+    height: auto;
     width: 450px;
     display: block;
     background-color: white;
@@ -127,12 +142,12 @@ a, a:hover, a:focus, a:active {
     border-radius: 8px;
 }
 
-.login-form{
+/* .login-form{
     margin-top: 30px;
     font-weight: bold;
-}
+} */
 
-input[type=email], input[type=password] {   
+input[type=email], input[type=password], input[type=text] {   
     width: 100%;   
     margin: 5px 0px 25px;  
     padding: 12px 20px;   
@@ -142,12 +157,6 @@ input[type=email], input[type=password] {
     background-color: #C4C4C4;
 }  
 
-.form-login-btn{
-    position: relative;
-    width: 125px !important;
-    border: 2px rgb(34, 34, 34);
-    background-color: rgb(34, 34, 34);
-}
 
 .login-error-message {
     color: rgb(226,30,44) !important;
@@ -167,9 +176,9 @@ input[type=email], input[type=password] {
 
 .signup{
     text-align: center;
-    display: block;
     justify-content: center;
     padding-top: 20px;
+    text-decoration: none !important;
 }
 
 

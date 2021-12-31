@@ -28,7 +28,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/github_username/repo_name">
-    <img src="/public/assets/images/sprout-img.png" alt="Logo" width="80" height="100">
+    <img src="/public/assets/images/iso-tree-img.png" alt="Logo" width="80" height="100">
   </a>
 
 <h3 align="center">Pomo-Grow</h3>
@@ -116,6 +116,7 @@ Project Link: [https://github.com/MalikTaylor/Pomo-Grow](https://github.com/Mali
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
+<img src="">
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
@@ -125,4 +126,5 @@ Project Link: [https://github.com/MalikTaylor/Pomo-Grow](https://github.com/Mali
 [license-url]: https://choosealicense.com/licenses/mit
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=flat-square&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/-maliktaylor
-[product-screenshot]: /public/assets/images/pomo-grow-thumbnail-img
+[product-screenshot]: /public/assets/images/pomo-grow-thumbnail-img.png
+

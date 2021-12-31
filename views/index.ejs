@@ -29,8 +29,7 @@
             </div>
             <div class="btn-group">
                 <button id="settings-btn" class="nav-btn btn-lg"><i id="settings-icon" class="fas fa-cog"></i>Settings</button> 
-                
-                <div class="col-md-3 col-xs- text-end">
+            
                 
                     <% if(!locals.loggedin) {%>
                         <form id="login-btn-form" action="/login">
@@ -38,7 +37,7 @@
                         </form>    
                     <%} else{%>
                         <form id="login-btn-form"   action="/login">
-                            <button id="login-btn" class="btn-lg" style="visibility: hidden;">Login</button>
+                            <button id="login-btn" class="btn-lg" style="visibility: hidden; display: none;" >Login</button>
                         </form>   
                         <div class="dropdown">
                             <button onclick="dropDown()" id="user-btn" class="btn-lg dropbtn"><%= name %></button>
@@ -50,7 +49,7 @@
                             </div>
                         </div>     
                     <%} %>
-                </div>
+                
             </div>
             
         </div>
