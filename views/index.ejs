@@ -73,9 +73,11 @@
             </div>   
         </nav>
 
+    
+
         <main class="container" style="align-items: center; justify-content: center; text-align: center; height: 100vh; z-index: -1;">
             <div class="page-container">
-                <div id="settings-panel" style="position: absolute; top: 18vh; height: 500px; width: 600px; z-index: 5; padding: 20px; background-color: white; visibility: hidden;" >
+                <div id="settings-panel" style="position: absolute; top: 0; bottom: 0; left: 0; right: 0; height: 75vh; width: 600px; margin: auto;  justify-content: center;  align-items: center; z-index: 5; padding: 20px; background-color: white; visibility: hidden;" >
                     <div style="display: inline-flex; justify-content: center; width: 100%;">
                         <h3>Timer Settings</h3>
                         <button id="settings-exit-btn" class="exit-btn btn" style="position: absolute; top: 15px; right: 25px; font-size: 25px;"><i class="fas fa-times"></i></button>
@@ -96,13 +98,13 @@
                                 <input type="numbers" id="lb-time" name="pomo-time" placeholder="15" style="width: 100px;">
                             </div>
                         </div>
-                        <div class="btn-group" style="position: relative; top: 50%;">
+                        <div class="btn-group" style="position: relative; top: 65%;">
                             <button type="button" class="form-cancel-btn btn-lg white-form-btn">Cancel</button>
                             <button type="submit" class="form-btn btn-lg">Save</button>
                         </div>
                     </form>
                 </div>
-                <div id="profile-panel" style="position: absolute; height: 500px; width: 600px; z-index: 5; padding: 20px; background-color: white; visibility: hidden;" >
+                <div id="profile-panel" style="position: absolute; top: 0; bottom: 0; left: 0; right: 0; height: 75vh; width: 600px; margin: auto;  justify-content: center;  align-items: center; z-index: 5; padding: 20px; background-color: white; visibility: hidden;">
                     <div style="width: 100%;">
                         <h3>Profile</h3>
                         <button id="profile-exit-btn" class="exit-btn btn" style="position: absolute; top: 15px; right: 25px; font-size: 25px;"><i class="fas fa-times"></i></button>
@@ -123,7 +125,7 @@
                 </div>
 
                 <div id="timer-container" class="secondary">   
-                    <div class="timer-multi-button btn-group" >
+                    <div class="timer-multi-button d-flex" >
                         <button id="pm-btn" class="timer-nav-btn btn-lg secondary">Pomodoro</button>
                         <button id="sb-btn" class="timer-nav-btn btn-lg secondary">Short Break</button>
                         <button id="lb-btn" class="timer-nav-btn btn-lg secondary">Long Break</button>

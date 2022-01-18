@@ -1,6 +1,7 @@
 body{
     font-family: 'Signika', sans-serif !important;
     /* margin: 0px; */
+    height: 100vh;
     overflow: hidden;
     transition: background-color 0.5s ease-in-out 0s;
 }
@@ -148,18 +149,15 @@ main{
 }
 
 .login-container{
+    position: relative;
     height: auto;
     width: 450px;
+    margin-top: 33%;
     display: block;
     background-color: white;
     padding: 30px 30px;
     border-radius: 8px;
 }
-
-/* .login-form{
-    margin-top: 30px;
-    font-weight: bold;
-} */
 
 input[type=email], input[type=password], input[type=text] {   
     width: 100%;   
@@ -170,7 +168,6 @@ input[type=email], input[type=password], input[type=text] {
     border: 2px #C4C4C4;
     background-color: #C4C4C4;
 }  
-
 
 .login-error-message {
     color: rgb(226,30,44) !important;
@@ -262,12 +259,15 @@ input[type=email], input[type=password], input[type=text] {
 
 #timer-container{
     position: absolute;
-    top: 18vh;
-    height: 700px;
-    width: 600px;
+    height: 75vh;
+    width: 90vw;
+    max-width: 600px;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
     padding: 30px 30px;
-    display: block;
-    text-align: center;
     color: white;
     justify-content: center;
     align-items: center;
@@ -279,18 +279,22 @@ input[type=email], input[type=password], input[type=text] {
 }
 
 .timer-multi-button{
-    padding: 15px;
+    padding: 15px 0px 15px 0px;
     border-radius: 3px;
+    justify-content: center;
+    align-items: center;
 }
 
 .timer-nav-btn{
     height: 57px; 
-    width: 150px;
+    width: 24vw;
+    max-width: 150px !important;
     border: 2px #365542;
     border-radius: 0px !important;
     background-color: #365542;
     /* font-family: 'Bahnschrift' !important; */
     font-family: 'Roboto', sans-serif;
+    font-size: 1em !important;
     transition: background-color 0.5s ease-in-out 0s;
 }
 
@@ -331,7 +335,15 @@ input[type=email], input[type=password], input[type=text] {
     .navbar{
         padding: 8px 25px 8px 25px !important;
     }
-    #timer-container{
+    #settings-panel{
+        width: 90vw !important;
+        height: 80vh;
+    }
+    #profile-panel{
+        width: 90vw !important;
+        height: 80vh;
+    }
+    /* #timer-container{
         position: relative;
         height: 550px;
         min-width: 375px;
@@ -343,21 +355,21 @@ input[type=email], input[type=password], input[type=text] {
         align-items: center;
         border-radius: 8px;
         background-color: #365542;
-        /* font-family: 'Bahnschrift' !important; */
+        font-family: 'Bahnschrift' !important;
         transition: background-color 0.5s ease-in-out 0s;
-    }
-    .timer-multi-button{
+    } 
+    /* .timer-multi-button{
         padding: 15px 0px 15px 0px;
         border-radius: 3px;
         text-align: center;
-    }
-    .timer-nav-btn{
+    } */
+    /* .timer-nav-btn{
         position: relative;
         width: 115px !important;
         font-size: 15px !important;
-    }
+    } */
     #logo{
-        font-size: 30px !important;
+        font-size: 40px !important;
     }
     .icon{
         height: 25px;
@@ -370,8 +382,8 @@ input[type=email], input[type=password], input[type=text] {
     }
     /*Rename img to iso tree img */
     #img{
-        width: 140px;
-        height: 175px;
+        width: 200px;
+        height: auto;
     }
     .form-login-btn {
         margin-top: 30px;
@@ -379,7 +391,10 @@ input[type=email], input[type=password], input[type=text] {
     }
     #start-btn{
         position: relative;
-        top: 40px;
+        top: 8%;
+        
     }
 }
+
+
 
