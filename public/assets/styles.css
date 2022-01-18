@@ -1,13 +1,17 @@
 body{
     font-family: 'Signika', sans-serif !important;
-    margin: 0px;
-    height: 100vh !important;
+    /* margin: 0px; */
     overflow: hidden;
     transition: background-color 0.5s ease-in-out 0s;
 }
 
 a, a:hover, a:focus, a:active {
     color: inherit;
+}
+
+main{
+    height: 100vh !important;
+    z-index: -1;
 }
 
 
@@ -42,7 +46,10 @@ a, a:hover, a:focus, a:active {
 
 /* Navbar content */
 .navbar{
+    position: absolute;
+    width: 100%;
     padding: 8px 50px 8px 50px !important;
+    z-index: 5;
 }
 
 #logo{
@@ -96,6 +103,12 @@ a, a:hover, a:focus, a:active {
 
 
 /* Navbar Buttons */
+
+#navbarSupportedContent{
+    position: relative;
+    left: 70%;
+}
+
 .nav-btn{
     height: 50px; 
     width: 125px;
@@ -248,8 +261,8 @@ input[type=email], input[type=password], input[type=text] {
 }
 
 #timer-container{
-    position: relative;
-    top: 7vh;
+    position: absolute;
+    top: 18vh;
     height: 700px;
     width: 600px;
     padding: 30px 30px;
@@ -260,7 +273,8 @@ input[type=email], input[type=password], input[type=text] {
     align-items: center;
     border-radius: 8px;
     background-color: #365542;
-    font-family: 'Bahnschrift' !important;
+    /* font-family: 'Bahnschrift' !important; */
+    font-family: 'Signika', sans-serif;
     transition: background-color 0.5s ease-in-out 0s;
 }
 

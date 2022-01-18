@@ -114,7 +114,6 @@ window.onload = function () {
     
 };
 
-
 function CheckTime(){
     //Settings form handling
     const settingsForm = document.querySelector("#timer-settings")
@@ -124,6 +123,11 @@ function CheckTime(){
         pm_Time = document.querySelector("#pomo-time").value
         sb_Time = document.querySelector("#sb-time").value
         lb_Time = document.querySelector("#lb-time").value
+
+        if(pm_Time == 0 ) pm_Time = 25
+        if(sb_Time == 0 ) sb_Time = 5
+        if(lb_Time == 0 ) lb_Time = 15
+        
         displayTime(pm_Time, 00)
         $("#settings-panel").css("visibility", "hidden")
     })
